@@ -1,0 +1,20 @@
+env-variables:
+  log-level:
+    default: DEBUG
+    required: true
+  aws-region:
+    required: true
+  test-bool:
+    datatype: bool
+    default: False
+
+constants:
+  service-name:
+    datatype: str
+    value: config-mapping-updates
+  test-const:
+    value: 100
+    datatype: int
+  bool-const:
+    value: False
+    datatype: bool
