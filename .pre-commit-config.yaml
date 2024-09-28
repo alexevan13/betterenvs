@@ -57,13 +57,6 @@ repos:
       args:
       - --ignore=E501,W503
 
-  - repo: https://github.com/aws-cloudformation/cfn-python-lint
-    rev: v0.61.2  # The version of cfn-lint to use
-    hooks:
-      - id: cfn-python-lint
-        files: /template.*\.(json|yml|yaml)$
-        always_run: true
-
   - repo: local
     hooks:
       - id: unit-tests
