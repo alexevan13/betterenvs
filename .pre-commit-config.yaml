@@ -64,11 +64,11 @@ repos:
         files: /template.*\.(json|yml|yaml)$
         always_run: true
 
-#  - repo: local
-#    hooks:
-#      - id: unit-tests
-#        name: Python Unit Tests
-#        entry: bash -c 'cd application && pip install -r tests/requirements.txt && pytest && cd ..'
-#        language: python
-#        pass_filenames: false
-#        always_run: true
+  - repo: local
+    hooks:
+      - id: unit-tests
+        name: Python Unit Tests
+        entry: bash -c 'pip install -r tests/requirements.txt && pytest'
+        language: python
+        pass_filenames: false
+        always_run: true
